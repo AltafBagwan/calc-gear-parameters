@@ -1,4 +1,4 @@
-Gear Inspection Using Machine Vision
+# Gear Inspection Using Machine Vision
 This repository contains a project focused on the automated inspection of gears using machine vision techniques. The goal of this project is to analyze an image of a gear, measure its key parameters, and determine whether the gear meets specified quality standards.
 
 Table of Contents
