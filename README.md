@@ -1,1 +1,55 @@
-# calc-gear-parameters
+Gear Inspection Using Machine Vision
+This repository contains a project focused on the automated inspection of gears using machine vision techniques. The goal of this project is to analyze an image of a gear, measure its key parameters, and determine whether the gear meets specified quality standards.
+
+Table of Contents
+Overview
+Features
+Installation
+Usage
+Project Workflow
+Results
+Contributing
+License
+Overview
+The gear inspection process involves several steps, from image acquisition to the final assessment of the gear's quality. This project automates these steps, leveraging computer vision techniques to measure and evaluate the characteristics of gears.
+
+Features
+Image Preprocessing: Convert images to grayscale, apply blurring, and edge detection.
+Contour Detection: Identify the gear contour and measure its diameter.
+Teeth Counting: Count the number of teeth on the gear.
+Parameter Calculation: Calculate gear parameters such as module, pitch, and pitch circle diameter.
+Quality Assessment: Compare measured values with original specifications to determine pass/fail status.
+Installation
+To run this project, you will need Python installed on your system along with the required libraries.
+
+Clone this repository:
+
+bash
+Copy code
+git clone https://github.com/your-username/gear-inspection.git
+cd gear-inspection
+Install the required dependencies:
+
+bash
+Copy code
+pip install -r requirements.txt
+Usage
+Place the gear images in the appropriate directory (e.g., images/).
+Run the Jupyter notebook gear_inspection.ipynb to perform the inspection.
+Review the results, including the measured parameters and the pass/fail status.
+Project Workflow
+The machine vision-based gear inspection process consists of the following steps:
+
+Image Acquisition: Load the gear image for processing.
+Image Preprocessing: Apply blurring, smoothing, and edge detection to the image.
+Contour Detection: Identify the gear's contour and measure its diameter.
+Gear Segmentation: Apply segmentation and morphological operations to isolate gear teeth.
+Teeth Counting: Count the number of teeth using contour methods.
+Parameter Calculation: Calculate gear parameters such as module, pitch, and pitch circle diameter.
+Surface Inspection: (Optional) Analyze the surface of the gear using a Convolutional Neural Network (CNN).
+Quality Assessment: Compare the calculated values with the original specifications and determine the pass/fail status.
+Results
+The results of the inspection, including the measured values and a pass/fail indication, will be displayed in the notebook. The results can also be saved to a text file for further analysis.
+
+Contributing
+Contributions are welcome! Please fork this repository and submit a pull request with your changes.
